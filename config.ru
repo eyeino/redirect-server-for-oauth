@@ -1,2 +1,2 @@
-require './redirectapp'
+require './redirectapp.rb'
 run Sinatra::Application
