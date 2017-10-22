@@ -7,3 +7,10 @@ get '/pinterest' do
   
   redirect "oauth-example://oauth-callback/pinterest?state=#{state}&code=#{code}"
 end
+
+get '/medium' do
+  code = params[:code]
+  state = params[:state]
+  
+  redirect "oauth-example://oauth-callback/medium?state=#{state}&code=#{code}"
+end
